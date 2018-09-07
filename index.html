@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Site</title>
+  <meta charset="UTF-8">
+  	<style type="text/CSS">
+  	body {
+  		margin: 0px;
+  	}
+ #menu_head{
+ 	color: #eec375;
+ }
+ #menu_block {
+ 	display: inline-block;
+ 	height: 500%;
+	width: 20%; 
+	vertical-align: top;
+ }
+#menu p {
+	color: #eec375;
+	transition:border 0.2s;
+}
+#menu p:hover{
+	background-color: #85ab70;
+}
+
+  #menu { 
+  	width: 200px; 
+  	padding: 5px;
+  	border: 2px solid #4b4a45;
+	min-height: 700px;
+	transition: 1s;
+	font-size: 20px;
+	background-color: #4b4a45; 
+	}
+
+.text_block { 
+	max-width: 100%;
+	float: center;
+	border:#4b4a45 solid 0px;
+	color: #eec375;
+	margin-top: 15px;
+	border-radius: 10px;
+	margin-left: 40px; 
+	padding: 10px;
+	background-color: #4b4a45;
+	height: 200px;
+	width: 700px;
+	transition: 0.5s;
+
+}
+.text_block:hover { 
+	max-width: 
+	border:#4b4a45 solid 5px;
+	box-shadow:#85ab70 10px 10px 0px;
+}
+/*#right_block {
+	text-align: center;
+	color: #4b4a45;
+	float: right;
+	margin-top: 70px;
+  	width: 300px; 
+  	height: 700px;	
+  	padding: 5px;
+	min-height: 700px;
+	transition: 1s;
+	font-size: 20px;
+	background-color: #eedfac; 
+}
+#right_block p:hover{
+	background-color: #85ab70;
+}*/
+#head {
+	box-shadow:black 0px 1px 20px;
+	margin: 0px;
+	color: #4b4a45;
+	padding: 0.5em;
+	position: fixed;
+	background-color:#85ab70;
+	height: 4em;
+	box-sizing: border-box;
+	width: 100%;
+}
+#header {
+	text-decoration: bold;
+	font-size: 30px;
+	position: fixed;
+	margin-top: 10px; 
+}
+#txt_cont {
+		display: inline-block;
+		max-width: 60%;
+}
+#page{
+	padding-top: 4em;
+}
+	</style>
+ </head>
+	 <body>
+	 	<div id="head">
+	 		<img src="favicon.ico" style="height: 3em; width: auto;">
+	 		<span id="header">My site!</span>
+	 	</div>
+	 	<div id="page">
+	 		<span class="block" id="menu_block">
+				<div id="menu">
+					<h3 id="menu_head">
+						Menu
+					</h3>
+					<p>
+						some text in the menu
+					</p>
+					<p>
+						some text in the menu
+					</p>
+					<p>
+						some text in the menu
+					</p>
+				</div>
+			</span>
+			<span class="block" id="txt_cont">
+				<div class="text_block">
+					Слой, создаваемый через тег, является блочным элементом веб-страницы. Это означает, что по ширине слой занимает все доступное пространство и всегда начинается с новой строки. Поэтому ограничение ширины слоев никак не приведет к тому, что блоки станут располагаться рядом. Для нашей цели следует воспользоваться стилевым свойством float со значением left. Это свойство превращает блочный элемент в плавающий, что в свою очередь приводит к выравниванию слоя по левому краю и его обтеканию другими элементами по правому краю. На деле же слои при подобной манипуляции выстраиваются не друг под другом как обычно, а рядом по горизонтали. Но только в том случае, когда ширина слоев задана через свойство width, как показано в примере 1.
+				</div>
+				<div class="text_block">
+					Слой, создаваемый через тег, является блочным элементом веб-страницы. Это означает, что по ширине слой занимает все доступное пространство и всегда начинается с новой строки. Поэтому ограничение ширины слоев никак не приведет к тому, что блоки станут располагаться рядом. Для нашей цели следует воспользоваться стилевым свойством float со значением left. Это свойство превращает блочный элемент в плавающий, что в свою очередь приводит к выравниванию слоя по левому краю и его обтеканию другими элементами по правому краю. На деле же слои при подобной манипуляции выстраиваются не друг под другом как обычно, а рядом по горизонтали. Но только в том случае, когда ширина слоев задана через свойство width, как показано в примере 1.
+				</div>
+			</span>
+		</div>
+		 <!-- <span class="block" id="right_block">
+		<div id="second_menu"><p>some text</p><hr><p>some text</p><hr><p>some text</p><hr><p>some text</p><hr><p>some text </p><hr><p>some text</p><hr><p>some text<hr></p></div>
+		</span>-->
+	</body>
+</html>﻿
